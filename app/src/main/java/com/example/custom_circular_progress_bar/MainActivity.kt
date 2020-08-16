@@ -79,7 +79,7 @@ class MainActivity : AppCompatActivity() {
 
         Thread(Runnable {
             while (sec_progr < 100) {
-                sec_progr += 1
+                sec_progr += 10
 
                 try {
                     Thread.sleep(1000)
@@ -90,7 +90,7 @@ class MainActivity : AppCompatActivity() {
                 handler?.post {
                         secondProgressBar.progress = sec_progr
                         tv_second_progress.text = "Complete $sec_progr% of 100"
-                        if (sec_progr == 51) {
+                        if (sec_progr == 50) {
                             tv_second_progress.setTextColor(Color.parseColor("#ffffff"))
                         }
 
