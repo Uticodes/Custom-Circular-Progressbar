@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
     private var progr = 0
     private var sec_progr = 0
     private var dummy: Int = 0
+    var handler: Handler? = Handler()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -86,9 +87,7 @@ class MainActivity : AppCompatActivity() {
                     e.printStackTrace()
                 }
 
-                runOnUiThread {
-                    kotlin.run {
-
+                handler?.post {
                         secondProgressBar.progress = sec_progr
                         tv_second_progress.text = "Complete $sec_progr% of 100"
                         if (sec_progr == 51) {
@@ -101,7 +100,6 @@ class MainActivity : AppCompatActivity() {
                         }
 
                     }
-                }
             }
         }).start()
     }
