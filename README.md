@@ -12,7 +12,7 @@ git clone https://github.com/Uticodes/Custom-Circular-Progressbar.git
 
 ## Screenshot
 <ul>
-  <img src="https://github.com/Uticodes/Custom-Circular-Progressbar/blob/master/screenshot/progress.mp4" width="40%" alt="Screen1" hspace="15">
+  <img src="https://github.com/Uticodes/Custom-Circular-Progressbar/blob/master/screenshot/progress.gif" width="40%" alt="Screen1" hspace="15">
   <img src="https://github.com/Uticodes/Custom-Circular-Progressbar/blob/master/screenshot/progress_shot.jpg" width="40%" alt="Screen2" hspace="15">
 </ul>
 
