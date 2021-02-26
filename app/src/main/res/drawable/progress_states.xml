@@ -2,6 +2,7 @@
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@android:id/background">
         <shape android:shape="oval">
+
             <stroke
                 android:width="4dp"
                 android:color="@color/colorPrimary" />
@@ -24,7 +25,9 @@
         <clip
             android:clipOrientation="vertical"
             android:gravity="bottom">
-            <shape android:shape="oval">
+            <shape
+
+                android:shape="oval">
                 <stroke
                     android:width="4dp"
                     android:color="@color/colorDeepPink" />
@@ -32,4 +35,11 @@
             </shape>
         </clip>
     </item>
+
+   <!-- <item
+        android:id="@android:id/progress"
+        android:top="20dp" android:left="20dp">
+        <bitmap android:src="@drawable/run_tear_drop"
+            android:gravity="center" />
+    </item>-->
 </layer-list>

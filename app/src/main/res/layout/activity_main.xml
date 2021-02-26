@@ -72,20 +72,22 @@
             app:layout_constraintStart_toStartOf="@+id/button_decr"
             app:layout_constraintTop_toBottomOf="@+id/progress_bar" />
 
-            <ProgressBar
-                android:id="@+id/secondProgressBar"
-                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:minWidth="150dp"
-                android:minHeight="150dp"
-                android:padding="8dp"
-                android:layout_marginTop="16dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/auto_incr"
-                android:progressDrawable="@drawable/progress_states" />
+        <!--android:progressDrawable="@drawable/progress_states"-->
+
+        <ProgressBar
+            android:id="@+id/secondProgressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="32dp"
+            android:minWidth="150dp"
+            android:minHeight="150dp"
+            android:padding="8dp"
+            android:progressDrawable="@drawable/progress_states"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/auto_incr" />
 
         <TextView
             android:id="@+id/tv_second_progress"
@@ -113,6 +115,49 @@
             app:layout_constraintHorizontal_bias="0.487"
             app:layout_constraintStart_toStartOf="@+id/secondProgressBar"
             app:layout_constraintTop_toBottomOf="@+id/secondProgressBar" />
+
+
+        <ProgressBar
+            android:id="@+id/secondProgressBar2"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="32dp"
+            android:minWidth="150dp"
+            android:minHeight="150dp"
+            android:padding="8dp"
+            android:progressDrawable="@drawable/tear_drop_progress_states"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnSecondProgressBar" />
+
+        <TextView
+            android:id="@+id/tv_second_progress2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            app:layout_constraintBottom_toBottomOf="@+id/secondProgressBar2"
+            app:layout_constraintEnd_toEndOf="@+id/secondProgressBar2"
+            app:layout_constraintStart_toStartOf="@+id/secondProgressBar2"
+            app:layout_constraintTop_toTopOf="@+id/secondProgressBar2"
+            tools:text="60%" />
+
+
+        <Button
+            android:id="@+id/btnSecondProgressBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@color/colorAccent"
+            android:padding="16dp"
+            android:text="Auto fill up"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            app:layout_constraintEnd_toEndOf="@+id/secondProgressBar2"
+            app:layout_constraintHorizontal_bias="0.487"
+            app:layout_constraintStart_toStartOf="@+id/secondProgressBar2"
+            app:layout_constraintTop_toBottomOf="@+id/secondProgressBar2" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

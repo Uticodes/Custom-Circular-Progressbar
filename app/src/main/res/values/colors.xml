@@ -6,4 +6,11 @@
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorPurple">#CC2EFA</color>
     <color name="colorDeepPink">#FF1493</color>
+    <color name="experiment_set_up_bg">#e3eaf1</color>
+    <color name="experiment_set_up_primary">#0072ce</color>
+    <color name="experiment_set_up_primary_disabled">#66aae1</color>
+    <color name="slate_grey">#666b78</color>
+    <color name="pipette_bg">#f5f5f5</color>
+    <color name="run_progress_empty">#01f1fa</color>
+    <color name="run_progress_fill">#0072ce</color>
 </resources>

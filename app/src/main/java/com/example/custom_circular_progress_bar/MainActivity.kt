@@ -10,6 +10,7 @@ class MainActivity : AppCompatActivity() {
 
     private var progr = 0
     private var sec_progr = 0
+    private var sec_progr2 = 0
     private var dummy: Int = 0
     var handler: Handler? = Handler()
 
@@ -36,7 +37,9 @@ class MainActivity : AppCompatActivity() {
         btnSecondProgressBar.setOnClickListener {
             showFillUpProgress()
         }
-
+        btnSecondProgressBar2.setOnClickListener {
+            showFillUpProgress2()
+        }
 
     }
 
@@ -100,6 +103,35 @@ class MainActivity : AppCompatActivity() {
                         }
 
                     }
+            }
+        }).start()
+    }
+
+    private fun showFillUpProgress2() {
+
+        Thread(Runnable {
+            while (sec_progr2 < 100) {
+                sec_progr2 += 10
+
+                try {
+                    Thread.sleep(1000)
+                } catch (e: InterruptedException) {
+                    e.printStackTrace()
+                }
+
+                handler?.post {
+                    secondProgressBar2.progress = sec_progr2
+                    tv_second_progress2.text = "Complete $sec_progr% of 100"
+                    if (sec_progr2 == 50) {
+                        tv_second_progress2.setTextColor(Color.parseColor("#ffffff"))
+                    }
+
+                    if (sec_progr2 == 100) {
+                        tv_second_progress2.text = "All tasks completed"
+                        tv_second_progress2.setTextColor(Color.parseColor("#ffffff"))
+                    }
+
+                }
             }
         }).start()
     }

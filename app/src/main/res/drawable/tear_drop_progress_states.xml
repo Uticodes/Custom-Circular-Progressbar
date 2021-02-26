@@ -1,0 +1,12 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/run_tear_drop" />
+
+    <item android:id="@android:id/progress">
+        <clip
+            android:drawable="@drawable/run_tear_drop_fill"
+            android:clipOrientation="vertical"
+            android:gravity="bottom">
+        </clip>
+    </item>
+</layer-list>
